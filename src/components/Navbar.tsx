@@ -3,9 +3,16 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import AppBar from "@mui/material/AppBar";
-import {navigation} from '../App'
 
-export default class Navbar extends Component {
+interface NavigationProps {
+    navigationRoutes: {
+        name: string;
+        href: string;
+        component: JSX.Element;
+    }[]
+}
+
+export default class Navbar extends Component<NavigationProps> {
 
     render() {
         return (
@@ -17,7 +24,7 @@ export default class Navbar extends Component {
                     </Typography>
                     <nav>
                         {
-                            navigation.map((element, index) =>
+                            this.props.navigationRoutes.map((element, index) =>
                                 <Link
                                     key={index}
                                     variant="button"
