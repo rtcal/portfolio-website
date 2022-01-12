@@ -4,7 +4,6 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import Navbar from "./components/Navbar";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Projects from "./pages/Projects";
-import Achievements from "./pages/Achievements";
 import Experience from "./pages/Experience";
 
 const navigation = [
@@ -12,11 +11,6 @@ const navigation = [
         name: "Projects",
         href: "/",
         component: <Projects/>
-    },
-    {
-        name: "Achievements",
-        href: "/achievements",
-        component: <Achievements/>
     },
     {
         name: "Experience",
