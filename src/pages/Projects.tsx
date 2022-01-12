@@ -3,6 +3,15 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Album from "../components/Album";
 
+const projects = [
+    {
+        name: "Minecraft Minesweeper",
+        description: "My implementation of minesweeper implemented into a Minecraft plugin for others to enjoy.",
+        imageLink: "",
+        githubLink: "https://github.com/rtcal/minesweeper"
+    }
+];
+
 export default class Projects extends Component {
 
     render() {
@@ -20,7 +29,7 @@ export default class Projects extends Component {
                     This is my portfolio of projects and achievements I am proud of.
                 </Typography>
 
-                <Album/>
+                <Album projects={projects}/>
             </Container>
         );
     }

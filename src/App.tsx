@@ -7,7 +7,7 @@ import Projects from "./pages/Projects";
 import Achievements from "./pages/Achievements";
 import Experience from "./pages/Experience";
 
-export const navigation = [
+const navigation = [
     {
         name: "Projects",
         href: "/",
