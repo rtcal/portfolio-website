@@ -1,5 +1,4 @@
 import {Component} from "react";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Album from "../components/Album";
 import Title from "../components/Title";

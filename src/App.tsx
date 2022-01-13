@@ -4,7 +4,7 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import Navbar from "./components/Navbar";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Projects from "./pages/Projects";
-import Experience from "./pages/Experience";
+import Experiences from "./pages/Experiences";
 
 const navigation = [
     {
@@ -15,7 +15,7 @@ const navigation = [
     {
         name: "Experience",
         href: "/experience",
-        component: <Experience/>
+        component: <Experiences/>
     }
 ];
 
