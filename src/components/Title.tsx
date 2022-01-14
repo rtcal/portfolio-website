@@ -21,10 +21,10 @@ export default class Title extends Component<TitleProps> {
                 >{this.props.title}</Typography>
 
                 <Typography
+                    component="p"
                     variant="h5"
                     align="center"
                     color="text.secondary"
-                    component="p"
                 >{this.props.body}</Typography>
             </Container>
         );

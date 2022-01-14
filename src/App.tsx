@@ -1,6 +1,5 @@
 import {Component, Fragment} from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import GlobalStyles from '@mui/material/GlobalStyles';
 import Navbar from "./components/Navbar";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Projects from "./pages/Projects";
@@ -24,8 +23,6 @@ export default class App extends Component {
     render() {
         return (
             <Fragment>
-                <GlobalStyles styles={{}}/>
-
                 <CssBaseline/>
 
                 <Navbar navigationRoutes={navigation}/>
