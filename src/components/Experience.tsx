@@ -1,6 +1,6 @@
 import {Component} from "react";
 import Typography from "@mui/material/Typography";
-import {Container, Divider} from "@mui/material";
+import {Card, Container, Divider} from "@mui/material";
 
 interface ExperienceProps {
     title: string;
@@ -14,8 +14,7 @@ export default class Experience extends Component<ExperienceProps> {
 
     render() {
         return (
-            <Container>
-                <br/>
+            <Card style={{margin:20}}>
 
                 <Divider
                     variant="middle"
@@ -25,7 +24,7 @@ export default class Experience extends Component<ExperienceProps> {
                     <Typography
                         component="h5"
                         variant="h5"
-                        align="center"
+                        align="left"
                         color="text.primary"
                         gutterBottom
                     >{this.props.title}</Typography>
@@ -39,22 +38,19 @@ export default class Experience extends Component<ExperienceProps> {
                             <Typography
                                 component="p"
                                 variant="h5"
-                                align="center"
+                                align="left"
                                 color="text.secondary"
                             >{item.subtitle}</Typography>
 
                             {
                                 item.body.map(
-                                    (line, index) => <p key={index}>{line}</p>
+                                    (line, index) => <p key={index} style={{margin: 0}}>{line}</p>
                                 )
                             }
                         </Container>
                     )
                 }
-
-                <Divider/>
-                <br/>
-            </Container>
+            </Card>
         );
     }
 }
